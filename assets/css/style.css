@@ -46,3 +46,9 @@ a:active {
   position: relative;
   top: 1px;
 }
+
+#walk {
+  height: 260px;
+  width: 220px;
+  background: url('/assets/img/walk.png') -10px -10px;
+}

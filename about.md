@@ -5,26 +5,13 @@ permalink: /about/
 order: 2
 ---
 
-The University of California Office of the President has set a goal for 
-all UC campuses to go waste free by 2020. Currently, UC Santa Cruz diverts
-around 60% of its waste away from landfills (Historical). It would seem
-that the university is narrowing in on their goal, yet with less than a
-year to go there is still a significant amount of work to do. Unbenounced 
-to almost all of the campus population, the Santa Cruz Resource Recovery 
-Facility will no longer accept our waste. The material that people put in 
-the campus recycling bins is either too contaminated or not recyclable in 
-the first place. It will be impossible for UC Santa Cruz to go waste free 
-by 2020 if the Santa Cruz Resource Recovery Facility continues to reject 
-our waste.
-
-In order to clean up our recycling streams, the Without A Trace team
-is designing and building an interactive and education mobile game to 
-teach the campus population how to properly recycle. The game will be 
-playable on IOS and Android. The team chose to develop a mobile game 
-because they are massively popular with college students. Lectures or 
-fliers would be ineffective as the student body would not be as receptive 
-to those medium as they would an application on their phones. Given that 
-adults in their early 20s spend a sizable chunk of their day on their 
-phones, utilizing some of that screen time to a fun game with recycling 
-themes could change their recycling habits.
-
+<div class="row">
+    <div class="col-md-6">
+    In order to raise awareness and clean up our recycling streams, an interdisciplinary team of computer science, sustainability studies, and art students is designing and building an interactive and educational mobile game to raise awareness and influence detrimental consumption and disposal habits practiced by many members of the UCSC campus community. Adopting an enigmatic “dungeon crawler” strategy set in a post-apocalyptic landscape, the development team is committed to keeping the gameplay dynamic and fun while depicting a strict allegiance to current recycling policies and standards. Adopting sentiments represented by the larger “serious gaming” movement the team expects prospective players to experience more than entertainment when they download this free mobile app. Game mechanics introduce players to concepts like “pre-cycling” as they roam through different places on the hunt to collect and stockpile discarded materials. A triage incentive, integrated into the character’s “backpack” inventory, teaches players the value of sorting materials before trading them in. The game is being assembled on a Unity platform and will be playable on IOS and Android.
+    </div>
+    <div class="col">
+        <div id="demo">
+            <p id="walk" onmouseover="animateScript()"></p>
+        </div>
+    </div>
+</div>
