@@ -2,7 +2,7 @@
 layout: default
 title: Team
 permalink: /team/
-order: 2
+order: 1
 ---
 
 ## Team Members
