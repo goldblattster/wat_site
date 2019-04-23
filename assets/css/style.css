@@ -1,0 +1,48 @@
+body { font-family: 'Roboto', sans-serif; }
+#hero {
+  background: url('/assets/img/enewallscaled.png');
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#hero p {
+    font-size: 1.2em
+}
+
+#hero h1, .hero_emphasis {
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.navbar, .footer {
+    background: #f1e7fe
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body {
+    margin-bottom: 100px;
+}
+
+.footer {
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px; /* Set the fixed height of the footer here */
+    line-height: 80px; /* Vertically center the text there */
+  }
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}

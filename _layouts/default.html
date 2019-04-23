@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - Without A Trace</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,900i">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    {% assign sorted_pages = site.pages | sort:"order" %}
+
+    <section id="hero">
+      <div class="container">
+        <div class="row pb-2">
+          <div class="col-3">
+            <a href="/">
+              <img style="width: 200px" class="img-fluid" src="/assets/img/watscaled.png" alt="Without A Trace">
+            </a>
+          </div>
+          <div class="col pt-5">
+            <h1><a href="/">Without A Trace</a></h1>
+            <img src="/assets/img/app_store_render.png" alt="Download on the App Store">
+            <img src="/assets/img/google_play_render.png" alt="Get it on Google Play">
+            <p class="mt-3"><span class="hero_emphasis">Without A Trace</span> is set in a <span class="hero_emphasis">dystopian future</span> ravaged by <span class="hero_emphasis">ecological disaster</span>. You play as one of the few remaining survivors.</p>
+          </div>
+        </div>
+    </section>
+
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+          <a class="navbar-brand" style="display: none" href="/">Without A Trace</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav mr-auto">
+              <!--li class="nav-item{% if page.url == "blog" %} active{% endif %}">
+                  <a class="nav-link" href="/blog">Blog</a>
+              </li-->
+              
+              {% for my_page in sorted_pages %}
+                {% if my_page.title %}
+                  {% if page.url == my_page.url %}
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                    </li>
+                  {% else %}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                    </li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </nav>
+
+    <section>
+      <div class="container pt-3">
+        {{ content }}
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-3">
+              <span class="text-muted">&copy; {{ 'now' | date: "%Y" }} Without A Trace</span>
+            </div>
+            <div class="col">
+              <div class="float-right">
+                <a class="mr-4" href="https://sustainability.ucsc.edu/engage/jobs-internships/ideass/index.html" target="_blank">
+                  <img src="/assets/img/ideass.png" alt="IDEASS">
+                </a>
+                <a class="mr-4" href="https://sustainability.ucsc.edu/engage/jobs-internships/ideass/index.html" target="_blank">
+                  <img src="/assets/img/idea_hub.png" alt="IDEA Hub">
+                </a>
+                <a href="https://ideahub.sites.ucsc.edu" target="_blank">
+                  <img src="/assets/img/baskin.png" alt="Baskin School of Engineering">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="/assets/js/wat.js"></script>
+  </body>
+</html>

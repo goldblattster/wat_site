@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
+order: 3
 ---
 
 The University of California Office of the President has set a goal for 

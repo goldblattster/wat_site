@@ -1,37 +1,21 @@
 ---
-layout: page
+layout: default
 title: Team
 permalink: /team/
+order: 2
 ---
 
-# Team Members
+## Team Members
 
-Ryan Jacobs
+<div class="row mb-3">
+    {% for member in site.data.team["team"] %}
+        {% include teamhead.html member=member %}
+    {% endfor %}
+</div>
 
-Ariel Goldblatt
-
-Samuel Rapp
-
-Peter Huang
-
-Maia Dupuis
-
-Callum Chan
-
-Ali Babaei
-
-Ami Babaei
-
-Trey Cooper
-
-Priya Calaimany
-
-# Mentors
-
-Tamara Ball
-
-Mike Parisi
-
-Leslie O’Malley 
-
-Richard Jullig
+### Mentors
+<div class="row">
+    {% for member in site.data.team["mentors"] %}
+        {% include teamhead.html member=member %}
+    {% endfor %}
+</div>
