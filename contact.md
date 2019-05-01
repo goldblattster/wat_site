@@ -7,34 +7,45 @@ order: 4
 
 ## Contact
 
-<form>
+<form method="post" action="http://localhost:3000/contact">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="name_input">Name</label>
-      <input type="text" class="form-control" id="name_input" placeholder="Name">
+      <input type="text" class="form-control" id="name_input" placeholder="Name" name="name">
     </div>
     <div class="form-group col-md-6">
       <label for="email_input">Email</label>
-      <input type="email" class="form-control" id="email_input" placeholder="Email">
+      <input type="email" class="form-control" id="email_input" placeholder="Email" name="email">
     </div>
     
   </div>
   
   <div class="form-group">
     <label for="subject_input">Subject</label>
-    <input type="text" class="form-control" id="subject_input" placeholder="Subject">
+    <input type="text" class="form-control" id="subject_input" placeholder="Subject" name="subject">
   </div>
 
   <div class="form-group">
     <label for="body_input">Message</label>
-    <textarea class="form-control" rows="5" id="body_input"></textarea>
+    <textarea class="form-control" id="body_input" name="body"></textarea>
   </div>
   
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 
-<script src="//cdn.ckeditor.com/4.11.4/basic/ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/ckeditor5/12.1.0/classic/ckeditor.js"></script>
 <script>
-CKEDITOR.replace( 'body_input' );
+ClassicEditor
+        .create( document.querySelector( '#body_input' ) )
+        .catch( error => {
+            console.error( error );
+        } );
 </script>
+
+
+<style>
+.ck-editor__editable_inline {
+  min-height: 250px;
+}
+</style>
