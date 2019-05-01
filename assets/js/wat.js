@@ -38,4 +38,6 @@ $(function() {
            $(".navbar-brand").hide();
         }
     });
+
+    animateScript()
 });
