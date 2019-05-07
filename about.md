@@ -6,7 +6,7 @@ order: 2
 ---
 ## About
 
-<p style="text-align: center">**Problem Statement**</p>
+<p style="text-align: center"><strong>Problem Statement</strong></p>
 The United States currently faces a recycling crisis. China has recently restricted the import 
 of certain recyclable material, such as mixed paper and most plastics. Consequently, the market 
 for recyclable material has dramatically shrunk. Recycling facilities across the country have 
@@ -23,7 +23,7 @@ recyclable that the resource recovery facility is better off not taking our recy
 first place.
 
 
-<p style="text-align: center">**What We Are Doing About It**</p>
+<p style="text-align: center"><strong>What We Are Doing About It</strong></p>
 In order to raise awareness and clean up our recycling streams, an interdisciplinary team of 
 computer science, sustainability studies, and art students is designing and building an 
 interactive and educational mobile game to raise awareness and influence detrimental consumption 
