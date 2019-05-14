@@ -7,7 +7,7 @@ order: 4
 
 ## Contact
 
-<form method="post" action="http://localhost:3000/contact">
+<form method="post" action="https://young-river-58387.herokuapp.com//contact">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="name_input">Name</label>
