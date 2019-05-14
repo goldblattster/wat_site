@@ -27,7 +27,7 @@ order: 4
 
   <div class="form-group">
     <label for="body_input">Message</label>
-    <textarea class="form-control" id="body_input" name="body"></textarea>
+    <textarea class="form-control" id="body_input" name="body" required></textarea>
   </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>
